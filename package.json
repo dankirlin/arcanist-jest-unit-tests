@@ -1,6 +1,6 @@
 {
   "name": "arcanist-jest-unit-tests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tools for running jest unit tests using arcanist",
   "repository": {
     "type": "git",
