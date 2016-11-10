@@ -1,0 +1,11 @@
+{
+  "name": "arcanist-jest-unit-tests",
+  "version": "1.0.0",
+  "description": "Tools for running jest unit tests using arcanist",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opendoor-labs/arcanist-jest-unit-tests"
+  },
+  "author": "Matt Lanter",
+  "license": "ISC"
+}
