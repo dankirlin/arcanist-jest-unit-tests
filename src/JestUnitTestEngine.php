@@ -56,7 +56,7 @@ final class JestUnitTestEngine extends ArcanistUnitTestEngine {
   }
 
   public function buildTestFuture() {
-    $command = 'node_modules/.bin/jest --json';
+    $command = $this->getWorkingCopy()->getProjectRoot().'/native/node_modules/.bin/jest --json';
 
     // getEnableCoverage() returns either true, false, or null
     // true and false means it was explicitly turned on or off.  null means use the default
