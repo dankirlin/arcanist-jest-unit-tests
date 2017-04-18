@@ -45,7 +45,7 @@ final class JestUnitTestEngine extends ArcanistUnitTestEngine {
     // true and false means it was explicitly turned on or off.  null means use the default
     if ($this->getEnableCoverage() !== false) {
       $coverage = $this->readCoverage(
-        $this->getWorkingCopy()->getProjectRoot().'/native/coverage/clover.xml'
+        $this->getWorkingCopy()->getProjectRoot().'/coverage/clover.xml'
       );
       foreach ($test_results as $test_result) {
         $test_result->setCoverage($coverage);
@@ -56,7 +56,7 @@ final class JestUnitTestEngine extends ArcanistUnitTestEngine {
   }
 
   public function buildTestFuture() {
-    $command = $this->getWorkingCopy()->getProjectRoot().'/native/node_modules/.bin/jest --json';
+    $command = $this->getWorkingCopy()->getProjectRoot().'/node_modules/.bin/jest --json';
     
     // getEnableCoverage() returns either true, false, or null
     // true and false means it was explicitly turned on or off.  null means use the default
